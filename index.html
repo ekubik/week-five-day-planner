@@ -27,17 +27,21 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <br />
+     <!-- current date displayed here -->
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <div class="row">
+        <!-- column listing time -->
         <div class="col-1 hour">9 AM</div>
+        <!--editable text area for user to enter their scheduled events-->
         <textarea
           class="form-control textarea col-10"
           id="nine-am"
           rows="3"
         ></textarea>
-        <button type="submit" id="button-9" class="saveBtn col-1">🔒</button>
+        <!-- clickable button to save entered text -->
+        <button type="button" id="button-9" class="saveBtn col-1">🔒</button>
       </div>
       <div class="row">
         <div class="col-1 hour">10 AM</div>

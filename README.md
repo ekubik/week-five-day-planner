@@ -15,3 +15,8 @@ The application can be viewed here: <a href="https://ekubik.github.io/week-five-
 <br>
 
 <img src="./screenshots/dayplanner.png" alt="screenshot of planner at 10am, with colour coded blocks and a saved event" />
+
+
+<br>
+<em>Comments: </em>
+The code for this application could be optimised by using a loop to loop through the timeblocks and apply functions to each, rather than rewriting the function for each block. I am currently still very new to Javascript and coding in general, and given the time contraints for the homework I was not entirely comfortable that I would be able to pull that off. In the future, I would like to streamline my code for this application.
