@@ -33,19 +33,19 @@ var eventsFive = textArea5PM.value;
 var currentHour = moment().format("H");
 
 function changeBackgroundColour() {
-  if (currentHour === 9) {
+  if (currentHour === "9") {
     $(textArea9AM).addClass("present");
     $("textarea:not(#nine-am)").addClass("future");
-  } else if (currentHour === 10) {
+  } else if (currentHour === "10") {
     $(textArea9AM).addClass("past");
     $(textArea10AM).addClass("present");
     $("textarea:not(#nine-am):not(#ten-am").addClass("future");
-  } else if (currentHour === 11) {
+  } else if (currentHour === "11") {
     $(textArea9AM).addClass("past");
     $(textArea10AM).addClass("past");
     $(textArea11AM).addClass("present");
     $("textarea:not(#nine-am):not(#ten-am):not(#eleven-am").addClass("future");
-  } else if (currentHour === 12) {
+  } else if (currentHour === "12") {
     $(textArea9AM).addClass("past");
     $(textArea10AM).addClass("past");
     $(textArea11AM).addClass("past");
@@ -53,7 +53,7 @@ function changeBackgroundColour() {
     $(
       "textarea:not(#nine-am):not(#ten-am):not(#eleven-am):not(#twelve-pm"
     ).addClass("future");
-  } else if (currentHour === 13) {
+  } else if (currentHour === "13") {
     $(textArea9AM).addClass("past");
     $(textArea10AM).addClass("past");
     $(textArea11AM).addClass("past");
@@ -62,27 +62,27 @@ function changeBackgroundColour() {
     $(
       "textarea:not(#nine-am):not(#ten-am):not(#eleven-am):not(#twelve-pm):not(#one-pm)"
     ).addClass("future");
-  } else if (currentHour === 14) {
+  } else if (currentHour === "14") {
     $("textarea:not(#three-pm):not(#four-pm):not(#five-pm)").addClass("past");
     $(textArea2PM).addClass("present");
     $(textArea3PM).addClass("future");
     $(textArea4PM).addClass("future");
     $(textArea5PM).addClass("future");
-  } else if (currentHour === 15) {
+  } else if (currentHour === "15") {
     $(textArea3PM).addClass("present");
     $(textArea4PM).addClass("future");
     $(textArea5PM).addClass("future");
     $("textarea:not(#three-pm):not(#four-pm):not(#five-pm)").addClass("past");
-  } else if (currentHour === 16) {
+  } else if (currentHour === "16") {
     $(textArea4PM).addClass("present");
     $(textArea5PM).addClass("future");
     $("textarea:not(#four-pm):not(#five-pm)").addClass("past");
-  } else if (currentHour === 17) {
+  } else if (currentHour === "17") {
     $(textArea5PM).addClass("present");
     $("textarea:not(#five-pm)").addClass("past");
-  } else if (currentHour >= 18) {
+  } else if (currentHour >= "18") {
     $("textarea").addClass("past");
-  } else if (currentHour >= 0 && currentHour < 9) {
+  } else if (currentHour >= "0" && currentHour < "9") {
     $("textarea").addClass("future");
   }
 }
