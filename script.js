@@ -33,7 +33,9 @@ var eventsFive = textArea5PM.value;
 var currentHour = moment().format("H");
 
 function changeBackgroundColour() {
-  if (currentHour === "9") {
+  if (currentHour >= 0 && currentHour < 9) {
+    $("textarea").addClass("future");
+  } else if (currentHour === "9") {
     $(textArea9AM).addClass("present");
     $("textarea:not(#nine-am)").addClass("future");
   } else if (currentHour === "10") {
@@ -82,8 +84,8 @@ function changeBackgroundColour() {
     $("textarea:not(#five-pm)").addClass("past");
   } else if (currentHour >= "18") {
     $("textarea").addClass("past");
-  } else if (currentHour >= "0" && currentHour < "9") {
-    $("textarea").addClass("future");
+    // } else if (currentHour >= 0 && currentHour < 9) {
+    //  $("textarea").addClass("future");
   }
 }
 
